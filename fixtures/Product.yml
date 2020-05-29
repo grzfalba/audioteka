@@ -1,0 +1,31 @@
+App\Entity\Product:
+  Product-1:
+    name: The Godfather
+    priceAmount: 59.99
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
+  Product-2:
+    name: Steve Jobs
+    priceAmount: 49.95
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
+  Product-3:
+    name: The Return of Sherlock Holmes
+    priceAmount: 39.99
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
+  Product-4:
+    name: The Little Prince
+    priceAmount: 29.99
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
+  Product-5:
+    name: I Hate Myselfie!
+    priceAmount: 19.99
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
+  Product-6:
+    name: The Trial
+    priceAmount: 9.99
+    priceCurrency: PLN
+    dateCreated: '<(new DateTime("now"))>'
