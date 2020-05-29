@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "a96ef89b-6684-4ed1-b05d-ce5efe1a52b3",
+		"name": "audioteka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"aaa\",\n\t\"priceAmount\": 1.23,\n\t\"priceCurrency\": \"PLN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/product/",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"aaa\",\n\t\"priceAmount\": 1.23,\n\t\"priceCurrency\": \"PLN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/product/7",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"product",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://audioteka.local/product/8",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"product",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products/page/{nr}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/products/page/1",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"products",
+						"page",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/cart",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cart/{id}/product/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/cart/1/product/5",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"cart",
+						"1",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cart/{id}/product/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/cart/1/product/4",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"cart",
+						"1",
+						"product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cart/{id}/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://audioteka.local/cart/1/products",
+					"protocol": "http",
+					"host": [
+						"audioteka",
+						"local"
+					],
+					"path": [
+						"cart",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
